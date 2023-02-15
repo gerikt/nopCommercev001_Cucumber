@@ -32,7 +32,7 @@ public class AddcustomerPage {
 	By txtDob = By.xpath("//*[@id=\"DateOfBirth\"]");
 	By txtcoName = By.xpath("//*[@id=\"Company\"]");
 	
-	By txtnewsletter = By.xpath("//*[@id=\"customer-info\"]/div[2]/div[10]/div[2]/div/div[1]/div/div");
+	By txtnewsletter = By.xpath("/html/body/div[3]/div[1]/form/section/div/div/nop-cards/nop-card/div/div[2]/div[9]/div[2]/div/div[1]/div/div");
 	
 	By btnsave = By.xpath("/html/body/div[3]/div[1]/form/div[1]/div/button[1]");
 

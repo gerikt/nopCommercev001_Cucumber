@@ -123,7 +123,7 @@ public class Steps extends BaseClass {
 		addCust.setFirstName("John");
 		addCust.setLastName("mollins");
 		addCust.setCompanyName("Samsung");
-		addCust.setNewletter("Documento");
+		//addCust.setNewletter("Documento");
 		addCust.setDob("01/01/2000");
 	    
 	}
