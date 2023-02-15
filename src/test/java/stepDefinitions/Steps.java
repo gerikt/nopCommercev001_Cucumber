@@ -161,6 +161,8 @@ public class Steps extends BaseClass {
 		boolean status =searchCust.searchCustomerByEmail("victoria_victoria@nopCommerce.com");
 		Assert.assertEquals(true,status);
 		//This should be true false but for some reason it fails to assert properly so i will leave it like this for now
+		//fixed in the loop limit it should have been i+1 instead of i
+	
 	}
 
 	

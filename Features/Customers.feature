@@ -40,6 +40,7 @@ Feature: Customers
     Then User can view Dashboard
     When User click on customers Menu
     And click on customers Menu Item 
+    And click on customers
     And enter customers First Name
     And Enter customers Last Name
     When Click on search button
