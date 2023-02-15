@@ -11,6 +11,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.AddcustomerPage;
 import pageObjects.LoginPage;
+import pageObjects.SearchCustomerPage;
 
 //the exceptions that where automatically generated
 //had to commented out otherwise the code wouldn't run
@@ -138,5 +139,31 @@ public class Steps extends BaseClass {
 	    Assert.assertTrue(driver.findElement(By.tagName("body")).getText().
 	    		contains("The new customer has been added successfully."));
 	}
+	
+	
+	// Search customer by email..............................
+
+	@When("Enter customers Email")
+	public void enter_customers_email() {
+   
+		searchCust=new SearchCustomerPage(driver);
+		searchCust.setEmail("victoria_victoria@nopCommerce.com");
+	}
+	@When("Click on search button")
+	public void click_on_search_button() throws InterruptedException {
+   
+		searchCust.clickSearch();
+		Thread.sleep(3000);
+	}
+	@Then("User should find Email in the Search table")
+	public void user_should_find_email_in_the_search_table() {
+   ;
+		boolean status =searchCust.searchCustomerByEmail("victoria_victoria@nopCommerce.com");
+		Assert.assertEquals(true, status);
+	}
+
+	
+	
+	
 	
 }
