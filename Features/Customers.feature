@@ -31,3 +31,17 @@ Feature: Customers
     Then User should find Email in the Search table
     And close browser
  
+ 
+  Scenario: Search Customer by Name
+    Given User Launch Edge browser
+    When user opens URL "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F"
+    And user enters Email as "admin@yourstore.com" and Password as "admin"
+    And click on Login
+    Then User can view Dashboard
+    When User click on customers Menu
+    And click on customers Menu Item 
+    And enter customers First Name
+    And Enter customers Last Name
+    When Click on search button
+    Then User should find Name in the Search table
+    And close browser

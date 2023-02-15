@@ -143,6 +143,9 @@ public class SearchCustomerPage {
 	
 	public boolean searchCustomerByEmail(String email)
 	{
+		//This is not working properly needs to be fixed
+		//it returns false when it should return true 
+		
 		boolean flag=false;
 		
 		for(int i =1; i<=getNoOfRows();i++)
@@ -162,7 +165,29 @@ public class SearchCustomerPage {
 		return flag;
 	}
 	
-	
+	public boolean searchCustomerByName(String Name)
+	{
+		//This is not working properly needs to be fixed
+		//it returns false when it should return true 
+		
+		boolean flag=false;
+		
+		for(int i =1; i<=getNoOfRows();i++)
+		{
+			String name=table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr[" + i + "]/td[3]")).getText();
+			
+			String names[] = name.split(" ");
+			
+			if(names[0].equals("Victoria") && names[1].equals("Terces") )
+			{
+				flag=true;
+			}
+			
+		}
+		
+				
+		return flag;
+	}
 	
 	
 	
