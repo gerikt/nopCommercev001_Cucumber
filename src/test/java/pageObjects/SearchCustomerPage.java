@@ -148,7 +148,7 @@ public class SearchCustomerPage {
 		
 		boolean flag=false;
 		
-		for(int i =1; i<=getNoOfRows();i++)
+		for(int i =1; i<=getNoOfRows() +1;i++)
 		{
 			String emailid=table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr[" + i + "]/td[2]")).getText();
 			

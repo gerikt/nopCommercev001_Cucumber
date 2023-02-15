@@ -159,7 +159,7 @@ public class Steps extends BaseClass {
 	public void user_should_find_email_in_the_search_table() {
    ;
 		boolean status =searchCust.searchCustomerByEmail("victoria_victoria@nopCommerce.com");
-		Assert.assertEquals(false,status);
+		Assert.assertEquals(true,status);
 		//This should be true false but for some reason it fails to assert properly so i will leave it like this for now
 	}
 
