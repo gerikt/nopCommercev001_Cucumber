@@ -3,6 +3,11 @@ package stepDefinitions;
 
 
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
@@ -11,6 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -24,6 +30,56 @@ import pageObjects.SearchCustomerPage;
 
 public class Steps extends BaseClass {
 
+	@Before
+	public void setup() throws IOException
+	{
+		
+		//this method cannot be extended from base class it has to be in here to work
+		
+		//Reading properties
+		configProp = new Properties();
+		FileInputStream configPropfile = new FileInputStream("config.properties");
+		configProp.load(configPropfile);
+		
+		
+		
+		//In order for this to work i had to enter thelog4j jar manually
+				//i have it on the desktop if i ever need it again 
+				logger =Logger.getLogger("nopCommerce");//Added logger
+				PropertyConfigurator.configure("log4j.properties");//Added logger
+				
+				
+				//Browser configuration based on properties file
+				String br = configProp.getProperty("browser");
+				
+				
+				if(br.equals("chrome"))
+				{
+					System.setProperty("webdriver.chrome.driver", configProp.getProperty("chromepath"));
+					driver = new ChromeDriver();
+				}
+				
+				else if(br.equals("edge"))
+				{
+					System.setProperty("webdriver.msgedge.driver", configProp.getProperty("msgedgepath"));
+					driver = new EdgeDriver();
+				}
+				else if(br.equals("firefox"))
+				{
+					System.setProperty("webdriver.gecko.driver", configProp.getProperty("firefoxpath"));
+					driver = new EdgeDriver();
+				}
+				
+				
+				
+				
+				
+				
+				logger.info("**********Launching browser***********");
+		
+		
+	}
+	
 	
 	
 	
@@ -31,14 +87,7 @@ public class Steps extends BaseClass {
 	public void user_launch_edge_browser() {
 		
 		
-		//In order for this to work i had to enter thelog4j jar manually
-		//i have it on the desktop if i ever need it again 
-		logger =Logger.getLogger("nopCommerce");//Added logger
-		PropertyConfigurator.configure("log4j.properties");//Added logger
 		
-		System.setProperty("webdriver.msgedge.driver", System.getProperty("user.dir") + "//Drivers/msedgedriver.exe");
-		driver = new EdgeDriver();
-		logger.info("**********Launching browser***********");
 		lp=new LoginPage(driver);
 	}
 
