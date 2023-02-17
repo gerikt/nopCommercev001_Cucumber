@@ -1,11 +1,15 @@
 Feature: Customers
 
-  Scenario: Add a new Customer
-    Given User Launch Edge browser
+
+Background: Below are the common steps for each senario
+		Given User Launch Edge browser
     When user opens URL "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F"
     And user enters Email as "admin@yourstore.com" and Password as "admin"
     And click on Login
     Then User can view Dashboard
+
+  Scenario: Add a new Customer
+   
     When User click on customers Menu
     And click on customers Menu Item 
     And click on customers
@@ -18,11 +22,7 @@ Feature: Customers
     
     
     Scenario: Search Customer by EmailID
-    Given User Launch Edge browser
-    When user opens URL "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F"
-    And user enters Email as "admin@yourstore.com" and Password as "admin"
-    And click on Login
-    Then User can view Dashboard
+  
     When User click on customers Menu
     And click on customers Menu Item 
     And click on customers
@@ -33,11 +33,7 @@ Feature: Customers
  
  
   Scenario: Search Customer by Name
-    Given User Launch Edge browser
-    When user opens URL "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F"
-    And user enters Email as "admin@yourstore.com" and Password as "admin"
-    And click on Login
-    Then User can view Dashboard
+  
     When User click on customers Menu
     And click on customers Menu Item 
     And click on customers

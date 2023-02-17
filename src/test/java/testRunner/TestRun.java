@@ -18,7 +18,9 @@ import io.cucumber.junit.CucumberOptions;
 )
 public class TestRun {
 	
-	
+	//if i want to run more than one feature files
+	//i would put them in {} and seperate by comma,
+	//features={".//Features/Customers.feature",".//Features/Login.feature"}
 	
 
 }
