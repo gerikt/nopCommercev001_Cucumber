@@ -1,7 +1,7 @@
 package stepDefinitions;
 
 import org.apache.commons.lang.RandomStringUtils;
-import org.apache.logging.log4j.core.Logger;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import pageObjects.AddcustomerPage;
@@ -14,6 +14,8 @@ public class BaseClass  {
 	public LoginPage lp;
 	public AddcustomerPage addCust;
 	public SearchCustomerPage searchCust;
+	public static Logger logger;
+	
 	//Created to generate a random String for a Unique email
 	public static String randomestring()
 	{

@@ -1,0 +1,86 @@
+2023-02-16 21:39:33,248 - nopCommerce -INFO - **********Launching browser***********
+2023-02-16 21:39:34,146 - nopCommerce -INFO - **********Getting url***********
+2023-02-16 21:39:34,505 - nopCommerce -INFO - **********Entering credentials***********
+2023-02-16 21:39:36,656 - nopCommerce -INFO - **********Click Loggin***********
+2023-02-16 21:39:36,658 - nopCommerce -INFO - **********View Dashboard confirmation***********
+2023-02-16 21:39:36,683 - nopCommerce -INFO - **********Click on customer menu***********
+2023-02-16 21:39:39,844 - nopCommerce -INFO - **********Click on menu item***********
+2023-02-16 21:39:42,962 - nopCommerce -INFO - **********Click on customers***********
+2023-02-16 21:39:46,084 - nopCommerce -INFO - **********Click on add a new customer button***********
+2023-02-16 21:39:50,124 - nopCommerce -INFO - **********Confirm add a new customer page***********
+2023-02-16 21:39:50,139 - nopCommerce -INFO - **********Entering customer info***********
+2023-02-16 21:39:53,228 - nopCommerce -INFO - **********Launching browser***********
+2023-02-16 21:39:53,925 - nopCommerce -INFO - **********Getting url***********
+2023-02-16 21:39:54,192 - nopCommerce -INFO - **********Entering credentials***********
+2023-02-16 21:39:56,328 - nopCommerce -INFO - **********Click Loggin***********
+2023-02-16 21:39:56,329 - nopCommerce -INFO - **********View Dashboard confirmation***********
+2023-02-16 21:39:56,344 - nopCommerce -INFO - **********Click on customer menu***********
+2023-02-16 21:39:59,483 - nopCommerce -INFO - **********Click on menu item***********
+2023-02-16 21:40:02,581 - nopCommerce -INFO - **********Click on customers***********
+2023-02-16 21:40:05,656 - nopCommerce -INFO - **********Searching customer by email id***********
+2023-02-16 21:40:16,622 - nopCommerce -INFO - **********Launching browser***********
+2023-02-16 21:40:17,426 - nopCommerce -INFO - **********Getting url***********
+2023-02-16 21:40:17,747 - nopCommerce -INFO - **********Entering credentials***********
+2023-02-16 21:40:19,677 - nopCommerce -INFO - **********Click Loggin***********
+2023-02-16 21:40:19,679 - nopCommerce -INFO - **********View Dashboard confirmation***********
+2023-02-16 21:40:19,696 - nopCommerce -INFO - **********Click on customer menu***********
+2023-02-16 21:40:22,802 - nopCommerce -INFO - **********Click on menu item***********
+2023-02-16 21:40:25,914 - nopCommerce -INFO - **********Click on customers***********
+2023-02-16 21:40:28,804 - nopCommerce -INFO - **********Click on add a new customer button***********
+2023-02-16 21:40:33,512 - nopCommerce -INFO - **********Confirm add a new customer page***********
+2023-02-16 21:40:33,527 - nopCommerce -INFO - **********Entering customer info***********
+2023-02-16 21:40:34,284 - nopCommerce -INFO - **********Click on save button***********
+2023-02-16 21:40:38,534 - nopCommerce -INFO - **********Close browser***********
+2023-02-16 21:40:41,546 - nopCommerce -INFO - **********Launching browser***********
+2023-02-16 21:40:42,225 - nopCommerce -INFO - **********Getting url***********
+2023-02-16 21:40:42,495 - nopCommerce -INFO - **********Entering credentials***********
+2023-02-16 21:40:44,746 - nopCommerce -INFO - **********Click Loggin***********
+2023-02-16 21:40:44,747 - nopCommerce -INFO - **********View Dashboard confirmation***********
+2023-02-16 21:40:44,759 - nopCommerce -INFO - **********Click on customer menu***********
+2023-02-16 21:40:47,842 - nopCommerce -INFO - **********Click on menu item***********
+2023-02-16 21:40:50,921 - nopCommerce -INFO - **********Click on customers***********
+2023-02-16 21:40:53,794 - nopCommerce -INFO - **********Searching customer by email id***********
+2023-02-16 21:40:57,194 - nopCommerce -INFO - **********Close browser***********
+2023-02-16 21:41:00,122 - nopCommerce -INFO - **********Launching browser***********
+2023-02-16 21:41:00,908 - nopCommerce -INFO - **********Getting url***********
+2023-02-16 21:41:01,182 - nopCommerce -INFO - **********Entering credentials***********
+2023-02-16 21:41:02,834 - nopCommerce -INFO - **********Click Loggin***********
+2023-02-16 21:41:02,834 - nopCommerce -INFO - **********View Dashboard confirmation***********
+2023-02-16 21:41:02,843 - nopCommerce -INFO - **********Click on customer menu***********
+2023-02-16 21:41:05,916 - nopCommerce -INFO - **********Click on menu item***********
+2023-02-16 21:41:08,991 - nopCommerce -INFO - **********Click on customers***********
+2023-02-16 21:41:11,834 - nopCommerce -INFO - **********Searching customer by name***********
+2023-02-16 21:41:15,253 - nopCommerce -INFO - **********Close browser***********
+2023-02-16 21:48:11,214 - nopCommerce -INFO - **********Launching browser***********
+2023-02-16 21:48:12,066 - nopCommerce -INFO - **********Getting url***********
+2023-02-16 21:48:12,285 - nopCommerce -INFO - **********Entering credentials***********
+2023-02-16 21:48:14,315 - nopCommerce -INFO - **********Click Loggin***********
+2023-02-16 21:48:14,317 - nopCommerce -INFO - **********View Dashboard confirmation***********
+2023-02-16 21:48:14,347 - nopCommerce -INFO - **********Click on customer menu***********
+2023-02-16 21:48:17,489 - nopCommerce -INFO - **********Click on menu item***********
+2023-02-16 21:48:20,585 - nopCommerce -INFO - **********Click on customers***********
+2023-02-16 21:48:23,999 - nopCommerce -INFO - **********Click on add a new customer button***********
+2023-02-16 21:48:27,968 - nopCommerce -INFO - **********Confirm add a new customer page***********
+2023-02-16 21:48:27,987 - nopCommerce -INFO - **********Entering customer info***********
+2023-02-16 21:48:28,838 - nopCommerce -INFO - **********Click on save button***********
+2023-02-16 21:48:33,675 - nopCommerce -INFO - **********Close browser***********
+2023-02-16 21:48:36,799 - nopCommerce -INFO - **********Launching browser***********
+2023-02-16 21:48:37,512 - nopCommerce -INFO - **********Getting url***********
+2023-02-16 21:48:37,767 - nopCommerce -INFO - **********Entering credentials***********
+2023-02-16 21:48:39,488 - nopCommerce -INFO - **********Click Loggin***********
+2023-02-16 21:48:39,489 - nopCommerce -INFO - **********View Dashboard confirmation***********
+2023-02-16 21:48:39,507 - nopCommerce -INFO - **********Click on customer menu***********
+2023-02-16 21:48:42,677 - nopCommerce -INFO - **********Click on menu item***********
+2023-02-16 21:48:45,760 - nopCommerce -INFO - **********Click on customers***********
+2023-02-16 21:48:49,303 - nopCommerce -INFO - **********Searching customer by email id***********
+2023-02-16 21:48:53,203 - nopCommerce -INFO - **********Close browser***********
+2023-02-16 21:48:56,111 - nopCommerce -INFO - **********Launching browser***********
+2023-02-16 21:48:56,862 - nopCommerce -INFO - **********Getting url***********
+2023-02-16 21:48:57,091 - nopCommerce -INFO - **********Entering credentials***********
+2023-02-16 21:48:59,796 - nopCommerce -INFO - **********Click Loggin***********
+2023-02-16 21:48:59,797 - nopCommerce -INFO - **********View Dashboard confirmation***********
+2023-02-16 21:48:59,808 - nopCommerce -INFO - **********Click on customer menu***********
+2023-02-16 21:49:02,947 - nopCommerce -INFO - **********Click on menu item***********
+2023-02-16 21:49:06,048 - nopCommerce -INFO - **********Click on customers***********
+2023-02-16 21:49:09,514 - nopCommerce -INFO - **********Searching customer by name***********
+2023-02-16 21:49:13,433 - nopCommerce -INFO - **********Close browser***********

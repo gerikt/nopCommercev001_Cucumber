@@ -12,6 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		features=".//Features/Customers.feature",
 		glue="stepDefinitions",
 		dryRun=false,
+		monochrome=true,
 		plugin={"pretty",
 				"html:test-output"}
 

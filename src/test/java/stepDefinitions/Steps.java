@@ -2,7 +2,9 @@ package stepDefinitions;
 
 
 
-import org.apache.logging.log4j.core.Logger;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,29 +29,39 @@ public class Steps extends BaseClass {
 	
 	@Given("User Launch Edge browser")
 	public void user_launch_edge_browser() {
+		
+		
+		//In order for this to work i had to enter thelog4j jar manually
+		//i have it on the desktop if i ever need it again 
+		logger =Logger.getLogger("nopCommerce");//Added logger
+		PropertyConfigurator.configure("log4j.properties");//Added logger
+		
 		System.setProperty("webdriver.msgedge.driver", System.getProperty("user.dir") + "//Drivers/msedgedriver.exe");
 		driver = new EdgeDriver();
+		logger.info("**********Launching browser***********");
 		lp=new LoginPage(driver);
-		//throw new io.cucumber.java.PendingException();
 	}
 
 	@When("user opens URL {string}")
 	public void user_opens_url(String url) {
 		driver.get(url);
-		//throw new io.cucumber.java.PendingException();
+		logger.info("**********Getting url***********");
+
 	}
 
 	@When("user enters Email as {string} and Password as {string}")
 	public void user_enters_email_as_and_password_as(String email, String password) {
 		lp.setUserName(email);
 		lp.setPassword(password);
-		//throw new io.cucumber.java.PendingException();
+		logger.info("**********Entering credentials***********");
+
 	}
 
 	@When("click on Login")
 	public void click_on_login() {
 		lp.clickLogin();
-		//new io.cucumber.java.PendingException();
+		logger.info("**********Click Loggin***********");
+
 	}
 
 	@Then("Page Title should be  {string}")
@@ -57,9 +69,13 @@ public class Steps extends BaseClass {
 		if(driver.getPageSource().contains("Login was unsuccessful"))
 		{
 			driver.close();
+			logger.info("**********Login passed***********");
+
 			Assert.assertTrue(false);
 		}else
 		{
+			logger.info("**********Login failed***********");
+
 			Assert.assertEquals(title,driver.getTitle());
 		}
 		//throw new io.cucumber.java.PendingException();
@@ -67,6 +83,7 @@ public class Steps extends BaseClass {
 
 	@When("user click on Log out link")
 	public void user_click_on_log_out_link() throws InterruptedException {
+		logger.info("**********Click on Log Out link***********");
 		lp.clickLogout();
 		Thread.sleep(3000);
 		//throw new io.cucumber.java.PendingException();
@@ -76,6 +93,7 @@ public class Steps extends BaseClass {
 
 	@Then("close browser")
 	public void close_browser() {
+		logger.info("**********Close browser***********");
 		driver.close();
 		//throw new io.cucumber.java.PendingException();
 	}
@@ -87,40 +105,45 @@ public class Steps extends BaseClass {
 	
 	@Then("User can view Dashboard")
 	public void user_can_view_dashboard() {
-	    
+		logger.info("**********View Dashboard confirmation***********");
 		addCust = new AddcustomerPage(driver);
 		Assert.assertEquals("Dashboard / nopCommerce administration", addCust.getPageTitle());
 	}
 	@When("User click on customers Menu")
 	public void user_click_on_customers_menu() throws InterruptedException {
+		logger.info("**********Click on customer menu***********");
 		Thread.sleep(3000);
 		addCust.clickOnCustomersMenu();
 	   
 	}
 	@When("click on customers Menu Item")
 	public void click_on_customers_menu_item() throws InterruptedException {
+	  logger.info("**********Click on menu item***********");
 	  Thread.sleep(3000);
 	  addCust.clickOnCustomerMenuItem();
 	  
 	}
 	@When("click on customers")
 	public void click_on_customers() throws InterruptedException {
+	logger.info("**********Click on customers***********");
 	Thread.sleep(2000);
     addCust.clickOnCustomers();
 	}
 	
 	@When("click on Add new button")
 	public void click_on_add_new_button() throws InterruptedException {
+		logger.info("**********Click on add a new customer button***********");
 		addCust.clickOnAddnew();
 	    Thread.sleep(3000);
 	}
 	@Then("User can view Add new customer page")
 	public void user_can_view_add_new_customer_page() {
+		logger.info("**********Confirm add a new customer page***********");
 	   Assert.assertEquals("Add a new customer / nopCommerce administration", addCust.getPageTitle());
 	}
 	@When("User enter customer info")
 	public void user_enter_customer_info() {
-		
+		logger.info("**********Entering customer info***********");
 		String email= randomestring()+ "@gmail.com";
 		addCust.setEmail(email);
 		addCust.setPassword("test123");
@@ -133,6 +156,8 @@ public class Steps extends BaseClass {
 	}
 	@When("click on Save button")
 	public void click_on_save_button() throws InterruptedException {
+		
+		logger.info("**********Click on save button***********");
 		addCust.clickOnSave();
 		Thread.sleep(3000);
 	   
@@ -149,6 +174,7 @@ public class Steps extends BaseClass {
 	@When("Enter customers Email")
 	public void enter_customers_email() {
    
+		logger.info("**********Searching customer by email id***********");
 		searchCust=new SearchCustomerPage(driver);
 		searchCust.setEmail("victoria_victoria@nopCommerce.com");
 	}
@@ -173,6 +199,8 @@ public class Steps extends BaseClass {
 	
 	@When("enter customers First Name")
 	public void enter_customers_first_name() {
+		logger.info("**********Searching customer by name***********");
+
 		searchCust = new SearchCustomerPage(driver);
 		//have to initialize at the start of each scenario
 	   
